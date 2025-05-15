@@ -64,7 +64,7 @@ function Hero() {
       </div>
 
       <div className='hidden lg:block'>
-        <img className='h-[450px]' src="/nk.png" alt="Neeraj" />
+        <img className='h-[450px]' src="/NK.png" alt="" />
       </div>
 
     </div>
