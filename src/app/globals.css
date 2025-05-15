@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+.mm6{
+  height: 120px;
+}
+
+.mm7{
+  height: 120px;
+}
+
+
+.mm8{
+  height: 450px;
+}
+
+.mm11{
+  height: 500px;
+}
+
+.mm12{
+  height: 700px;
+}
+.hvtext{
+  height: 80px;
+  margin-bottom: 70px;
+}
+
+.resume{
+  display: inline-flex;
+padding: 12px 22px;
+justify-content: center;
+align-items: flex-end;
+gap: 10px;
+border-radius: 3px;
+color: white;
+background: var(--grey, #191919);
+}
