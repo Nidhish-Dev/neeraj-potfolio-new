@@ -54,10 +54,10 @@ function Page() {
   return (
     <>
       <Navbar />
-      <div className="w-screen min-h-screen flex flex-col mt-20">
+      <div className="w-screen min-h-screen flex flex-col mt-10">
         {/* Header Section */}
         <motion.div
-          className="px-40 py-10"
+          className="px-40 pb-10"
           initial={{ opacity: 0, y: 50 }}
           animate={isHeroVisible ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 1.2, ease: "easeOut" }}
@@ -269,7 +269,7 @@ function Page() {
 
         {/* User Research */}
         <motion.div
-          className="px-40 my-20"
+          className="px-40 mt-20"
           initial={{ opacity: 0, y: 50 }}
           animate={isUserResearchVisible ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 1.2, ease: "easeOut" }}
@@ -280,7 +280,7 @@ function Page() {
 
         {/* Possible Solution */}
         <motion.div
-          className="px-28 my-20"
+          className="px-28 mt-10"
           initial={{ opacity: 0, y: 50 }}
           animate={isPossibleSolutionVisible ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 1.2, ease: "easeOut" }}
@@ -291,7 +291,7 @@ function Page() {
 
         {/* Mission Statement */}
         <motion.div
-          className="px-52 my-20"
+          className="px-52 mt-10"
           initial={{ opacity: 0, y: 50 }}
           animate={isMissionStatementVisible ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 1.2, ease: "easeOut" }}
@@ -302,7 +302,7 @@ function Page() {
 
         {/* Competitive Landscape */}
         <motion.div
-          className="px-40 my-20"
+          className="px-40 mt-20"
           initial={{ opacity: 0, y: 50 }}
           animate={isCompetitiveLandscapeVisible ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 1.2, ease: "easeOut" }}
@@ -313,7 +313,7 @@ function Page() {
 
         {/* Persona */}
         <motion.div
-          className="px-40 my-20"
+          className="px-40 mt-10"
           initial={{ opacity: 0, y: 50 }}
           animate={isPersonaVisible ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 1.2, ease: "easeOut" }}
@@ -324,7 +324,7 @@ function Page() {
 
         {/* Information Architecture */}
         <motion.div
-          className="px-40 my-20"
+          className="px-40 mt-28"
           initial={{ opacity: 0, y: 50 }}
           animate={isInfoArchitectureVisible ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 1.2, ease: "easeOut" }}

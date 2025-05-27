@@ -28,7 +28,7 @@ function Hero() {
   }
 
   return (
-    <div className='relative flex flex-col-reverse lg:flex-row items-center justify-around mt-14 lg:mt-20 px-6'>
+    <div className='relative flex flex-col-reverse lg:flex-row items-center justify-around mt-14 lg:mt-20 '>
 
       <img 
         className='absolute left-1/2 transform -translate-x-1/2 bottom-0 h-4 lg:h-8 mt-32' 
@@ -64,7 +64,7 @@ function Hero() {
       </div>
 
       <div className='hidden lg:block'>
-        <img className='h-[450px]' src="/NK.png" alt="" />
+        <img className='h-[650px]' src="/NK.png" alt="" />
       </div>
 
     </div>

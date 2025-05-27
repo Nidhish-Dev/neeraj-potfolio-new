@@ -55,8 +55,8 @@ function Page() {
   return (
     <>
       <Navbar />
-    <div className="w-screen min-h-screen flex flex-col mt-20">
-        <div className="px-40 py-10">
+    <div className="w-screen min-h-screen flex flex-col mt-10">
+        <div className="px-40 pb-10">
           <p className="mt-12 text-[#595959]">User Experience with Visual Design Project</p>
           <p className="text-4xl text-[#595959] mt-3">Fashion Trend Analyzing App</p>
         </div>

@@ -39,6 +39,7 @@ export default function Home() {
 
       <motion.div
         ref={ref}
+         id="work"
         className="mt-20"
         initial={{ opacity: 0, y: 30, scale: 0.95 }}
         animate={controls}

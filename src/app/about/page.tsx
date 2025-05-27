@@ -38,20 +38,23 @@ function Page() {
               alt=""
             />
           </div>
-          <div className="flex flex-col items-center mt-8 md:mt-0">
+          <div className="flex flex-col  mt-8 md:mt-0">
             <img
               className="h-[300px] md:h-[673px] w-full max-w-[600px]"
               src="/neerajtext.png"
               alt=""
             />
-            <a
+            <div>
+<a
               href="/resume.pdf"
               download
               className="resume mt-5"
             >
               View Resume
             </a>
-            <div className="flex flex-col md:flex-row gap-4 md:gap-10 text-base md:text-[22px] mt-10 md:mt-28 text-[#595959] text-center">
+            </div>
+            
+            <div className="flex flex-col md:flex-row gap-2 md:gap-10  text-base md:text-[19px] mt-10 md:mt-28 text-[#595959] text-center">
               <p>Email: neeraj942000@gmail.com</p>
               <p>Phone: +49-15213505913</p>
             </div>

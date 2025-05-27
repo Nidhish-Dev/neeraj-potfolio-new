@@ -2,21 +2,27 @@
 import Link from 'next/link'
 import React, { useState } from 'react'
 import { Menu, X } from 'lucide-react'
-import { usePathname } from 'next/navigation'
+import { usePathname, useRouter } from 'next/navigation'
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
   const pathname = usePathname()
+  const router = useRouter()
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen)
+  const scrollToWork = () => {
+    setIsOpen(false)
+    if (pathname === '/') {
+      const el = document.getElementById('work')
+      if (el) el.scrollIntoView({ behavior: 'smooth' })
+    } else {
+      router.push('/#work') // go to homepage with hash, then scroll
+    }
   }
 
-  const isActive = (href: string) => pathname === href
+  const isActive = (href: string) => pathname === href || pathname === '/' && href === '/work'
 
   return (
-<nav className='w-full bg-white fixed md:static top-0 left-0 z-50 md:z-auto'>
-
+    <nav className='w-full bg-white fixed md:static top-0 left-0 z-50 md:z-auto'>
       <div className='flex items-center justify-between px-6 md:px-24 py-4'>
         {/* Logo */}
         <Link href='/'>
@@ -26,13 +32,13 @@ function Navbar() {
         {/* Desktop Menu */}
         <ul className='hidden md:flex gap-10 text-[#2A2A2A] text-lg font-normal'>
           <li>
-            <Link 
-              href='/work' 
+            <button 
+              onClick={scrollToWork}
               className={`relative transition-all duration-300 after:content-[""] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:bg-[#2A2A2A] 
                 ${isActive('/work') ? 'after:w-full' : 'after:w-0'} hover:after:w-full`}
             >
               Work
-            </Link>
+            </button>
           </li>
           <li>
             <Link 
@@ -55,7 +61,7 @@ function Navbar() {
         </ul>
 
         {/* Hamburger Icon */}
-        <div className='md:hidden z-50' onClick={toggleMenu}>
+        <div className='md:hidden z-50' onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? <X className='h-6 w-6 text-[#2A2A2A]' /> : <Menu className='h-6 w-6 text-[#2A2A2A]' />}
         </div>
       </div>
@@ -66,22 +72,21 @@ function Navbar() {
           isOpen ? 'translate-x-0' : '-translate-x-full'
         }`}
       >
-        <Link 
-          href='/work' 
-          onClick={() => setIsOpen(false)}
+        <button
+          onClick={scrollToWork}
           className={isActive('/work') ? 'underline decoration-[#2A2A2A] decoration-2' : ''}
         >
           Work
-        </Link>
-        <Link 
-          href='/playground' 
+        </button>
+        <Link
+          href='/playground'
           onClick={() => setIsOpen(false)}
           className={isActive('/playground') ? 'underline decoration-[#2A2A2A] decoration-2' : ''}
         >
           Playground
         </Link>
-        <Link 
-          href='/about' 
+        <Link
+          href='/about'
           onClick={() => setIsOpen(false)}
           className={isActive('/about') ? 'underline decoration-[#2A2A2A] decoration-2' : ''}
         >
