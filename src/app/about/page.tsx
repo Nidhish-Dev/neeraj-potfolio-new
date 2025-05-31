@@ -40,7 +40,7 @@ function Page() {
           </div>
           <div className="flex flex-col  mt-8 md:mt-0">
             <img
-              className="h-[300px] md:h-[673px] w-full max-w-[600px]"
+              className="h-[300px] md:h-[673px] w-full "
               src="/neerajtext.png"
               alt=""
             />
@@ -69,18 +69,18 @@ function Page() {
           ref={socialLinksRef}
         >
           <div className="flex gap-3 mb-4 md:mb-0">
-            <a href="">
+            <a target='blank' href="https://www.linkedin.com/in/neeraj-kumar-002118283/">
               <img className="h-[32px] md:h-[40px]" src="/linkedin.png" alt="" />
             </a>
-            <a href="">
+            <a target='blank' href="https://www.behance.net/000nr1118c21NKR">
               <img className="h-[32px] md:h-[40px]" src="/behance.png" alt="" />
             </a>
-            <a href="">
+            <a target='blank' href="https://www.instagram.com/_the_neeeraj/">
               <img className="h-[32px] md:h-[40px]" src="/instagram.png" alt="" />
             </a>
-            <a href="">
-              <img className="h-[32px] md:h-[40px]" src="/mail.png" alt="" />
-            </a>
+           <a target="_blank" href="mailto:neeraj942000@gmail.com">
+  <img className="h-[32px] md:h-[40px]" src="/mail.png" alt="Email Icon" />
+</a>
           </div>
           <motion.div
             className="text-center"
