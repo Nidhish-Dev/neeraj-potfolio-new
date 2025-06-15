@@ -46,12 +46,14 @@ function Page() {
             />
             <div>
 <a
-              href="/resume.pdf"
-              download
-              className="resume mt-5"
-            >
-              View Resume
-            </a>
+  href="/resume.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="resume mt-5"
+>
+  View Resume
+</a>
+
             </div>
             
             <div className="flex flex-col md:flex-row gap-2 md:gap-10  text-base md:text-[19px] mt-10 md:mt-28 text-[#595959] text-center">
